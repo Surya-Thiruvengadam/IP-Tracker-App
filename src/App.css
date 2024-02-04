@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+:root{
+  --VeryDarkGray: hsl(0, 0%, 17%);
+--DarkGray: hsl(0, 0%, 59%);
+font-size: 62.5%;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  background-color: var(--DarkGray);
+  overflow-x: hidden;
+}
+
+.bg-elements{
+  overflow-x: hidden;
+}
+.info-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin: 1rem;
+}
+
+.info-box h1{
+  color: #ffffff;
+  font-size: 2.7rem;
+}
+
+input[type='text']{
+  font-size: 1.7rem;
+  width: 100%;
+  border-radius:13px;
+  border: unset;
+  padding: 0.8em 1.4em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+input[type='text']:focus{
+  outline: 2px solid rgb(148, 151, 151);
+}
+
+form{
+  margin: 1rem auto 2rem;
+}
+
+.input-parent{
+  position: relative;
+  max-width: 55rem;
+  margin: auto;
+}
+input[type='image']{
+  background-color: var(--VeryDarkGray);
+  border-radius: 0px 10px 10px 0px ;
+  position: absolute;
+  padding: 1.7rem;
+  box-sizing: border-box;
+  top:0;
+  right:0;
+}
+
+.info-body{
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 2.3rem;
+}
+
+.info-main-items> h1{
+  color: var(--DarkGray);
+  font-size: 0.4em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.info-main-items >p{
+  font-weight: bolder;
+  line-height: 3rem;
+  font-size: 1em;
+  margin-top: 0;
+  letter-spacing: 1px;
+  word-break: break-word;
+}
+
+.leaflet-container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.loading-msg{
+  width: 100%;
+  text-align: center;
+  color: var(--DarkGray);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.errmsg{
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+@media screen and (min-width:700px){
+  form{
+    margin: 3rem 4rem 5rem;
+  }
+ .info-body{
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  max-width: 100rem;  
+ }
+
+ .info-main-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 20rem;
+ }
+
+
+ .info-main-items p{
+  font-size: 2rem;
+ }
+  
+
+ .leaflet-container{
+  height: 90vh;
+ }
+}
